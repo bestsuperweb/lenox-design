@@ -1,0 +1,120 @@
+@font-face {
+  font-family: HelveticaNeueLTStd;
+  src: font-url("../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.woff2") format("woff2"),
+  font-url("../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.ttf") format("truetype"),
+  font-url("../fonts/HelveticaNeueLTStd/HelveticaNeueLTStd-Bd.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+section#residences1{
+	background-image: url('../img/residences/residences-1.png');
+	text-align: center;
+	padding: 15vw 0;	
+}
+
+section#residences1 h1{
+	font-family: "Helvetica Neue LT Std", Helvetica, arial;
+	font-size: 80px;
+	color: #fff;
+	font-weight: bold;
+}
+
+section{
+	padding: 5vw;
+}
+
+.text-div{
+	padding: 4vw;
+}
+
+.text-div h5{
+	font-size: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1e22aa;
+    display: inline-block;
+    /*font-family: 'Muli';*/
+    color: #666666;
+}
+
+.text-div p{
+	/*font-family: 'HelveticaNeueLTStd';*/
+	font-family: 'Roboto';
+	font-size: 30px;
+	color: #666666;
+	line-height: 1.3;
+}
+
+.text-div span{
+	font-size: 15px;
+	color: #666;
+	margin-top: 30px;
+	display: inline-block;
+}
+
+.mark-img{	
+    width: 25vw;
+    margin-bottom: -12vw;
+}
+
+#residences4{
+	padding: 0;
+}
+
+#residences5{
+	background-color: #1e22aa;
+	padding-bottom: 10vw;
+}
+
+#residences5 h5, #residences5 p, #residences5 span{
+	color: #fff;
+	border-color: #fff;
+}
+
+#residences6{
+	margin-left: 5vw;
+	margin-top: -5vw;
+	background-color: #fff;
+}
+
+@media (max-width: 991px){
+
+	section{
+		padding: 5vw 0;
+	}
+
+	.text-div h5{
+		font-size: 15px;
+	    padding-bottom: 0;
+	    margin-bottom: 30px;
+	    color: #1e22aa;
+		border: none;
+	}
+
+	.text-div p{
+		font-size: 20px;
+	}
+
+	.text-div span{
+		font-size: 15px;
+	}
+
+	.mark-img{
+		display: none;
+	}
+
+	#residences2 h5{
+		font-size: 36px;
+		font-family: Roboto;
+	}
+
+	#residences4 img{
+		height: 100vw;
+	}
+
+	#residences6{
+		margin: 0;
+	}
+
+}
