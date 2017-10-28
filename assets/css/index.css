@@ -428,6 +428,21 @@ section#home-banner div.home-tagline .tagline-item p{
 	font-size: 40px;
 	font-weight: 400;
 }
+section#home-banner div.scroll{
+	position: absolute;
+    bottom: 55px;
+    width: 100%;
+}
+section#home-banner div.scroll img{
+	width: 25px;
+    margin-bottom: 20px;
+}
+section#home-banner div.scroll p{
+	color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+    font-size: 10px;
+}
 
 section#home-items, 
 section#home-items .container-fluid, 
