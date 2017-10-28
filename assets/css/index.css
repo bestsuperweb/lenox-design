@@ -3,3 +3,236 @@
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
+
+.bg-blue{
+	background-color: #1e22aa;
+	color: #fff;
+}
+
+.footer-copyright{
+	padding: 20px;
+}
+/* --- top navbar style --- */
+
+nav.navbar{
+	box-shadow: 0 0 4px rgba(0,0,0,.3);
+	border: none;
+	margin-bottom: 0;
+}
+.navbar > .container-fluid .navbar-brand{
+	height: 90px;
+}
+.logo-img{
+	width: 120px;
+	margin-left: 3vw;
+	margin-top: 10px;
+}
+
+@media (min-width: 768px){
+	.navbar > .container-fluid{
+		padding: 0;
+	}
+}
+
+@media (min-width: 1280px){
+	.navbar-center{
+		position: absolute;
+		left: calc(50% - 400px);
+	}
+}
+
+@media (max-width: 1280px) and (min-width: 990px){
+	.navbar-center{
+		position: absolute;
+		left: calc(50% - 345px);
+	}
+}
+
+@media (min-width: 990px){
+	.nav.navbar-center > li > a{
+		padding: 35px 1.5vw;
+		color: #000;
+	}
+	.nav.navbar-center > li > a:hover, .nav.navbar-center > li > a:focus{
+		color: #aaaaaa;
+		background: none;
+	}
+	.nav.navbar-right > li > a > img{
+		height: 20px;
+	}
+	.nav.navbar-right > li > a{
+		background: #1e22aa;
+		color: #fff;
+		padding: 35px 2vw;
+		height: 90px;
+		border-right: 1px solid rgba(255,255,255,.1);
+		transition: all .7s;
+	}
+	.nav.navbar-right > li.apply-link > a{
+		padding: 35px 2.6vw;
+	}
+	.nav.navbar-right > li > a:hover{
+		background-color: #1b1f99;
+	}
+}
+
+@media (max-width: 990px) and (min-width: 768px){
+	.collapse.in{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);        
+        background: #1e22aa;
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 100px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+		font-size: 20px;
+		color: #fff;
+		transition: all .7s;
+    }
+    .navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
+    	background: #1b1f99;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .navbar-toggle{
+    	background: #1e22aa;
+		border-radius: 0;
+		margin: 0;
+		padding: 22px 18px;
+		transition: all .7s;
+    }
+    .navbar-toggle:hover{
+    	background: #1b1f99;
+    }
+    .navbar-toggle .icon-bar{
+    	border-radius: 0;
+		background: #fff;
+		transition: all .3s;
+    }
+
+    .navbar > .container-fluid .navbar-brand {
+	    height: 60px;
+	}
+    .logo-img{
+    	width: 85px;
+		margin-left: 3vw;
+		margin-top: 0px;
+    }
+    .navbar-right{
+    	display: flex;
+    	margin-bottom: 0;
+    }
+    .navbar-right > li{
+    	width: 25%;
+    }
+    .navbar-right > li.apply-link{
+    	width: 50%;
+    }
+    .navbar-right > li.apply-link > a{
+    	border-right: none;
+    }
+    .navbar-right > li > a{
+    	padding-top: 30px;
+    	padding-bottom: 30px;
+    	border-top: 1px solid rgba(255,255,255,.1);
+    	border-right: 1px solid rgba(255,255,255,.1);
+    	height: 80px;
+    }
+}
+
+/* --- end navbar style --- */
+
+
+
+/* --- footer style --- */
+footer a{
+	padding: 5px 30px;
+	padding-left: 25px;
+	display: inline-block;
+	text-decoration: none;
+	color: #666;
+	height: 35px;
+}
+footer a:hover, footer a:focus{
+	color: #666;
+	text-decoration: none;
+}
+footer .list-inline > li{
+	padding: 15px 5px;
+}
+footer .footer-menu a{
+	border-right: 1px solid rgba(0,0,0,.1);	
+}
+footer .footer-menu a.footer-menu-last{
+	border: none;
+}
+footer .footer-contact{
+	margin-right: 1vw;
+}
+footer .footer-contact a{
+	padding: 5px 0;
+}
+footer .footer-contact a img{
+	vertical-align: sub;
+}
+
+@media (max-width: 990px){
+	footer .footer-menu{
+		text-align: center;
+		float: unset !important;
+		margin-top: 30px;
+	}
+	footer .footer-menu li, footer .footer-menu a{
+		padding-right: 0;
+		padding-left: 0;
+		margin: 0;
+		width: 33vw;
+	}
+	footer .footer-menu .list-inline{
+		margin-bottom: 0;
+		border-top: 1px solid rgba(0,0,0,.1);
+	}
+	footer .footer-contact li{
+		display: block;
+		padding: 0;
+	}
+}
+
+@media (max-width: 440px){
+	footer .footer-menu img{
+		width: 85%;
+	}
+}
+/* --- end footer style --- */
+
