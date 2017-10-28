@@ -335,6 +335,9 @@ footer a:hover, footer a:focus{
 	color: #666;
 	text-decoration: none;
 }
+footer .list-inline{
+	 margin-bottom: 0;
+}
 footer .list-inline > li{
 	padding: 15px 5px;
 }
