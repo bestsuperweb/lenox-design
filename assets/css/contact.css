@@ -1,0 +1,36 @@
+.contact-tagline{
+	margin: 80px 0;
+}
+.contact-tagline p{
+	font-size: 18px;
+}
+#contact-send{
+	margin-top: 50px;
+}
+#contact-info{
+	padding: 5vw;
+	padding-right: 0;
+}
+.map-content{
+	padding-top: 20px;
+}
+#contact-info>div{
+	margin-bottom: 5vw;
+}
+#contact-map{
+	height: 700px;
+}
+@media (max-width: 990px){
+	#contact-info h2{
+		font-size: 14px;
+	}
+	#contact-map{
+		height: 80vw;
+	}
+	.contact-tagline h2{
+		font-size: 22px;
+	}
+	.contact-tagline p{
+		font-size: 15px;
+	}
+}
