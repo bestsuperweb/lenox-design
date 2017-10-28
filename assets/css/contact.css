@@ -1,5 +1,6 @@
 section#contact2 .container-fluid{
 	background: #1b1f99;
+	padding: 0;
 }
 .contact-tagline{
 	margin: 80px 0;
@@ -12,6 +13,7 @@ section#contact2 .container-fluid{
 }
 #contact-info{
 	padding: 5vw;
+	padding-bottom: 0;
 	padding-right: 0;
 }
 .map-content{
