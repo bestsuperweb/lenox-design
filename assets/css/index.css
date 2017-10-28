@@ -161,6 +161,7 @@ nav.navbar{
 	box-shadow: 0 0 4px rgba(0,0,0,.3);
 	border: none;
 	margin-bottom: 0;
+	background: #fff;
 }
 .navbar > .container-fluid .navbar-brand{
 	height: 90px;
@@ -322,6 +323,9 @@ nav.navbar a{
 
 
 /* --- footer style --- */
+footer{
+	background: #fff;
+}
 footer a{
 	padding: 5px 30px;
 	padding-left: 25px;
@@ -363,7 +367,7 @@ footer .footer-copyright{
 }
 @media (max-width: 990px){
 	footer .footer-contact{
-		margin: 30px 0;
+		padding: 30px 0;
 	}
 	footer .footer-menu{
 		text-align: center;
@@ -391,4 +395,99 @@ footer .footer-copyright{
 	}
 }
 /* --- end footer style --- */
+
+
+/* ---  homepage style */
+section#home-banner{
+	padding: 0;
+}
+section#home-banner video{
+	position: fixed;
+	top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+section#home-banner div.home-tagline{
+	background: rgba(0,0,0,.5);
+	height: calc( 100vh - 90px );
+	padding-top: 30vh;
+}
+section#home-banner div.home-tagline .tagline-item{
+	display: none;
+}
+section#home-banner div.home-tagline .tagline-item h1{
+	font-size: 90px;
+	font-weight: 500;
+	color: #fff;
+}
+section#home-banner div.home-tagline .tagline-item p{
+	color: #fff;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+section#home-items, 
+section#home-items .container-fluid, 
+section#home-items .container-fluid .row, 
+section#home-items .container-fluid .row > div{
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all .5s;
+}
+section#home-items .container-fluid .row > div{
+	background: #000;
+}
+section#home-items .container-fluid .row > div img{
+	opacity: .5;
+	transition: all .5s;
+	width: 100%;
+}
+section#home-items .container-fluid .row > div img:hover{
+	opacity: initial;
+	transform: scale(1.4);
+}
+
+section#home-items .item{
+	position: absolute;
+	z-index: 20;
+	bottom: 15%;
+	left: 10%;
+	color: #fff;
+	pointer-events: none;
+}
+section#home-items .item h1{
+	font-size: 40px;
+	font-weight: 500;
+}
+@media (max-width: 990px){
+	section#home-banner div.home-tagline .tagline-item h1{
+		font-size: 60px;
+	}
+
+	section#home-items .item{
+		left: 0;
+		text-align: center;
+		width: 100%;
+	}
+	section#home-items .item .line-under{
+		margin-left: auto;
+	}
+}
+@media (max-width: 767px){
+	section#home-banner div.home-tagline .tagline-item h1{
+		font-size: 35px;
+	}
+	section#home-banner div.home-tagline .tagline-item p{
+		font-size: 18px;
+	}
+}
+/* homepage style ---*/
+
+
+
 
