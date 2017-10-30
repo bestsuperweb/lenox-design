@@ -9,7 +9,6 @@ body#availability-body .close-icon{
     transition: all .5s;
     cursor: pointer;
     z-index: 100;
-    color: #fff;
 }
 body#availability-body .close-icon:hover{
 	transform: scale(1.1)rotate(360deg);
@@ -151,5 +150,8 @@ section#availability-detail .mat-button{
 	}
 	section#availability-list{
 		padding: 50px 0;
+	}
+	section#availability-detail .close-icon{
+		color: #fff;
 	}
 }
