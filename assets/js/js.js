@@ -63,12 +63,14 @@ $( document ).ready(function() {
 		/* Act on the event */
 		$(this).parent().css('transform', 'scaleX(1.2)');
 		$(this).parent().children('.item').fadeOut(200);
+		$(this).parent().children('.item-hover').css('transform', 'scaleX(.83)').fadeIn(500);
 	});
 	$('section#home-items .container-fluid .row > div img').on('mouseout', function(event) {
 		event.preventDefault();
 		/* Act on the event */
 		$(this).parent().css('transform', 'none');
 		$(this).parent().children('.item').fadeIn(200);
+		$(this).parent().children('.item-hover').css('transfrom', 'none').fadeOut(200);
 	});
 
 	$('section#availability .rect-input[name="bedroom"]').val('Number of Bedrooms');

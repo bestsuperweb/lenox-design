@@ -423,6 +423,11 @@ section#home-banner div.home-tagline .tagline-item h1{
 	font-weight: 500;
 	color: #fff;
 }
+section#home-banner div.home-tagline .tagline-item h1 span{
+	background-color: #1e22aa;
+	font-weight: 600;
+	padding: 0 15px;
+}
 section#home-banner div.home-tagline .tagline-item p{
 	color: #fff;
 	font-size: 40px;
@@ -478,6 +483,17 @@ section#home-items .item{
 section#home-items .item h1{
 	font-size: 40px;
 	font-weight: 500;
+}
+section#home-items .item-hover{
+	position: absolute;
+	z-index: 20;
+	bottom: 15%;
+	left: 10%;
+	padding: 20px 50px;
+	background: #1e22aa;
+	color: #fff;
+	pointer-events: none;
+	display: none;
 }
 @media (max-width: 990px){
 	section#home-banner div.home-tagline .tagline-item h1{
