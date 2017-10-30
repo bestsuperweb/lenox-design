@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Lenox | Availability</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="png/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.min.css">  
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/availability.css" >
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/hover-min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/index.css" >
+
+</head>
+<body id="availability-body">
+  <nav class="navbar" w3-include-html="shared/header.html"></nav>
+
+  <section id="availability" >
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Harlem's finest no fee rental apartments.</h1>
+        </div>
+      </div>
+      <div class="row input-container">
+        <div class="col-md-3">
+          <input type="text" name="bedroom" class="rect-input" value="Number of Bedrooms">
+          <span class="glyphicon glyphicon-menu-down"></span>
+          <span class="rect-dropmenu" name='bedroom'>
+            <div class="radio">
+              <label><input type="radio" name="bedroom" value="1">1</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="bedroom" value="2">2</label>
+            </div>            
+          </span>
+        </div>
+        <div class="col-md-3">
+          <input type="text" name="bathroom" class="rect-input" value="Number of Bathrooms">
+          <span class="glyphicon glyphicon-menu-down"></span>
+          <span class="rect-dropmenu" name='bathroom'>
+            <div class="radio">
+              <label><input type="radio" name="bathroom" value="1">1</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="bathroom" value="2">2</label>
+            </div>            
+          </span>
+        </div>
+        <div class="col-md-3">
+          <input type="text" name="rent" class="rect-input" value="Rent Range">
+          <span class="glyphicon glyphicon-menu-down"></span>
+          <span class="rect-dropmenu" name='rent'>
+            <label>
+              <input type="text" name="" class="slider" data-slider-min="10" data-slider-max="5000" data-slider-step="1" data-slider-range="true" >
+            </label>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <input type="text" name="move_in" class="rect-input input-date" value="Move-In Date">
+          <span class="glyphicon glyphicon-menu-down"></span>
+          <span class="rect-dropmenu" name='move_in'>                      
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <button class="mat-button bg-blue" id="search-button">SEND</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="availability-list" >
+    <div class="container-fluid">
+      <h2 class="text-center">Available Units</h2>
+      <span class="glyphicon glyphicon-remove-circle close-icon"></span>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Amartment</th>
+              <th>Bedroms / Bathrooms</th>
+              <th>Apartment Size</th>
+              <th>Rent</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10 WEST 135th street apt#10a</td>
+              <td>1 bedroom</td>
+              <td>736 square ft.</td>
+              <td>$ 2200.00</td>
+              <td><button class="mat-button bg-blue view-detail">View Details</button></td>
+            </tr>
+            <tr>
+              <td>10 WEST 135th street apt#10a</td>
+              <td>1 bedroom</td>
+              <td>736 square ft.</td>
+              <td>$ 2200.00</td>
+              <td><button class="mat-button bg-blue view-detail">View Details</button></td>
+            </tr>
+            <tr>
+              <td>10 WEST 135th street apt#10a</td>
+              <td>1 bedroom</td>
+              <td>736 square ft.</td>
+              <td>$ 2200.00</td>
+              <td><button class="mat-button bg-blue view-detail">View Details</button></td>
+            </tr>
+            <tr>
+              <td>10 WEST 135th street apt#10a</td>
+              <td>1 bedroom</td>
+              <td>736 square ft.</td>
+              <td>$ 2200.00</td>
+              <td><button class="mat-button bg-blue view-detail">View Details</button></td>
+            </tr>
+            <tr>
+              <td>10 WEST 135th street apt#10a</td>
+              <td>1 bedroom</td>
+              <td>736 square ft.</td>
+              <td>$ 2200.00</td>
+              <td><button class="mat-button bg-blue view-detail">View Details</button></td>
+            </tr>
+            <tr>
+              <td>10 WEST 135th street apt#10a</td>
+              <td>1 bedroom</td>
+              <td>736 square ft.</td>
+              <td>$ 2200.00</td>
+              <td><button class="mat-button bg-blue view-detail">View Details</button></td>
+            </tr>
+            <tr>
+              <td>10 WEST 135th street apt#10a</td>
+              <td>1 bedroom</td>
+              <td>736 square ft.</td>
+              <td>$ 2200.00</td>
+              <td><button class="mat-button bg-blue view-detail">View Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>    
+  </section>
+
+  <section id="availability-detail">
+    <div class="container-fluid">
+      <span class="glyphicon glyphicon-remove-circle close-icon"></span>
+      <div class="row">
+        <div class="col-md-6 bg-blue">
+          <h2>Apartment #10A</h2>
+          <p>Lenox Terroce 10 West 135th Street</p>
+          <br>
+          <table class="table">
+            <thead>
+              <tr>
+                <th colspan="2"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Number of Bedrooms</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Number of Bathrooms</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Total Area</td>
+                <td>730 Sq </td>
+              </tr>
+              <tr>
+                <td>Rent</td>
+                <td>$2500.00</td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="mat-button bg-blue" id="availability-apply">
+            Apply Now
+          </button>
+          <br>
+          <button class="mat-button bg-blue" id="availability-download">
+            Download FloorPlan
+          </button>
+        </div>
+        <div class="col-md-6 floor-plan text-center">
+          <img src="assets/img/availability/floorplan.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer w3-include-html="shared/footer.html"></footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="assets/js/js.js"></script>
+</body>
+</html>
