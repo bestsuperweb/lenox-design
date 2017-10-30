@@ -9,6 +9,7 @@ body#availability-body .close-icon{
     transition: all .5s;
     cursor: pointer;
     z-index: 100;
+    color: #fff;
 }
 body#availability-body .close-icon:hover{
 	transform: scale(1.1)rotate(360deg);
@@ -132,4 +133,23 @@ section#availability-detail .mat-button{
 #availability-download{
 	background: #1b1f99;
 }
-section#availability-detail .close
+
+@media (max-width: 990px){
+	section#availability .row.input-container{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	section#availability .row.input-container > div{
+		background: #fff;
+	}
+	section#availability .row.input-container > div.bedroom, 
+	section#availability .row.input-container > div.rent{
+		background-color: #dddddd;
+	}
+	section#availability .row span.rect-dropmenu {
+	    position: initial;
+	}
+	section#availability-list{
+		padding: 50px 0;
+	}
+}
