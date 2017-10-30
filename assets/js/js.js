@@ -102,32 +102,39 @@ $( document ).ready(function() {
 		$('section#availability .rect-input[name="bathroom"]').val(value);
 	});
 
-	$("input.slider").bootstrapSlider({
-		tooltip_split: true,
-		formatter: function(value) {
-			return '$' + value;
-		}
-	}).on('slideStop', function(event) {
-		event.preventDefault();
-		/* Act on the event */
-		var value = $("input.slider").val();
-		value = 'Rent Range: $' + value.split(',')[0] + ' - $' + value.split(',')[1];
-		$('.rect-input[name="rent"]').val(value);
-	});
+	if ($('input.slider').length){
 
-	$('.rect-input.input-date').datepicker({
-		orientation: 'bottom',
-		format: {
-				    toDisplay: function (date, format, language) {				    	
-				        var d = "Move-In Date: " + formatDate(date);
-				        return d;
-				    },
-				    toValue: function (date, format, language) {				        
-				        return date;
-				    }
-				}
-	});
+		$("input.slider").bootstrapSlider({
+			tooltip_split: true,
+			formatter: function(value) {
+				return '$' + value;
+			}
+		}).on('slideStop', function(event) {
+			event.preventDefault();
+			/* Act on the event */
+			var value = $("input.slider").val();
+			value = 'Rent Range: $' + value.split(',')[0] + ' - $' + value.split(',')[1];
+			$('.rect-input[name="rent"]').val(value);
+		});
+	}
 
+	if ($('.rect-input.input-date').length){
+
+		$('.rect-input.input-date').datepicker({
+			orientation: 'bottom',
+			format: {
+					    toDisplay: function (date, format, language) {				    	
+					        var d = "Move-In Date: " + formatDate(date);
+					        return d;
+					    },
+					    toValue: function (date, format, language) {				        
+					        return date;
+					    }
+					}
+		});
+	
+	}
+	
 	$('section#availability #search-button').on('click', function(event) {
 		event.preventDefault();
 		/* Act on the event */
@@ -155,6 +162,39 @@ $( document ).ready(function() {
 		event.preventDefault();
 		$('section#availability-detail').hide();
 		$('section#availability-list').show(500);
+	});
+
+	$('#neighborhood-menu-toggle button').on('click', function(event) {
+		event.preventDefault();
+		/* Act on the event */
+		if($('#neighborhood-menu').is(':visible')){
+			$(this).children('span').eq(0).css({'transform': 'none', 'margin': '0'});
+    		$(this).children('span').eq(2).css({'transform': 'none', 'margin-top': '5px'});
+    		$(this).children('span').eq(1).css('background-color', '#666');
+			$('#neighborhood-menu').slideUp();
+		}else{
+			$('#neighborhood-menu').show();
+			$(this).children('span').eq(0).css({'transform': 'rotate(45deg)', 'margin-bottom': '-4px'});
+    		$(this).children('span').eq(2).css({'transform': 'rotate(-45deg)', 'margin-top': '-10px'});
+    		$(this).children('span').eq(1).css('background-color', 'transparent');
+		}
+		
+	});
+
+	$('#mobile-toggle').on('click', function(event) {
+		// event.preventDefault();
+		/* Act on the event */
+		if( $(this).attr('aria-expanded') == 'true' ){
+			$(this).html('MENU');
+		}else{
+			$(this).html('CLOSE');
+		}
+		$('html, body').animate({scrollTop: $('#mobile-menu').parent().offset().top - 100 }, 1000);
+	});
+
+	$('#mobile-menu a[data-toggle="collapse"]').on('click', function(event) {
+		/* Act on the event */
+		$('html, body').animate({scrollTop: $(this).offset().top - 150 }, 1000);
 	});
 
 });
