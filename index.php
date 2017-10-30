@@ -60,7 +60,7 @@
             <p>Discover The Residences</p>
           </div>
           <span class="item-hover">
-            Discover The Residences >
+            Discover The Residences &nbsp;&nbsp;&nbsp;>
           </span>
         </div>
         <div class="col-sm-6 col-lg-3">
@@ -71,7 +71,7 @@
             <p>View Features</p>
           </div>
           <span class="item-hover">
-            View Features >
+            View Features &nbsp;&nbsp;&nbsp;>
           </span>
         </div>
         <div class="col-sm-6 col-lg-3">
@@ -82,7 +82,7 @@
             <p>Explore Neighborhood</p>
           </div>
           <span class="item-hover">
-            Explore Neighborhood >
+            Explore Neighborhood &nbsp;&nbsp;&nbsp;>
           </span>
         </div>
         <div class="col-sm-6 col-lg-3">
@@ -93,7 +93,7 @@
             <p>Check Availability</p>
           </div>
           <span class="item-hover">
-            Check Availability >
+            Check Availability &nbsp;&nbsp;&nbsp;>
           </span>
         </div>
       </div>
