@@ -1,0 +1,135 @@
+body#availability-body{
+	background-image: url('../img/availability/availability1.png');	
+}
+body#availability-body .close-icon{
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 100;
+}
+body#availability-body .close-icon:hover{
+	transform: scale(1.1)rotate(360deg);
+}
+
+section#availability{
+	background-color: rgba(0,0,0,.4);
+	padding: 20vh 0;
+}
+section#availability h1{
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 90px;
+}
+section#availability .row.input-container > div{
+	padding: 0;
+}
+section#availability .row.input-container{
+	padding: 20px;
+	background-color: rgba(0,0,0,.2);
+	margin-bottom: 90px;
+}
+.rect-input, .rect-input:focus{
+	width: 100%;
+	padding: 20px;
+	border: none;
+	outline: none;
+}
+section#availability .row span.glyphicon{
+	position: absolute;
+	top: 40%;
+	z-index: 10;
+	right: 10px;
+}
+section#availability .row span.rect-dropmenu{
+	position: absolute;
+	width: 100%;
+	background-color: #fff;
+	display: none;
+}
+section#availability .row span.rect-dropmenu > div{
+	margin: 0;
+}
+section#availability .row span.rect-dropmenu label{
+	padding: 10px 30px;
+	width: 100%;
+}
+section#availability .row span.rect-dropmenu > div label:hover{
+	background-color: #eee;
+}
+.rect-input[name='bedroom'], .rect-input[name='rent'],
+section#availability .row span.rect-dropmenu[name='bedroom'],
+section#availability .row span.rect-dropmenu[name='rent']{
+	background-color: #dddddd;
+}
+.slider.slider-horizontal{
+	width: 100%;
+}
+.slider-selection{
+	background: #1e22aa;
+}
+.slider-handle{
+	background-image: linear-gradient(to bottom,#eee 0,#666 100%);
+}
+
+
+section#availability-list{
+	background-color: rgba(0,0,0,.8);
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 100;
+	display: none;
+}
+section#availability-list h2{
+	margin-bottom: 50px;
+}
+section#availability-list table thead th:last-child,
+section#availability-list table tr td:last-child{
+	text-align: center;
+}
+section#availability-list table tr td,
+section#availability-list table td{
+	vertical-align: middle;
+}
+section#availability-list table tbody tr:hover{
+	background-color: rgba(255, 255, 255, .1);
+}
+section#availability-list .mat-button{
+	padding: 1em 2em;
+}
+
+section#availability-detail{
+	display: none;
+}
+section#availability-detail, 
+section#availability-detail .container-fluid,
+section#availability-detail .container-fluid .row{
+	padding: 0;
+	margin: 0;
+	background: #fff;
+}
+section#availability-detail table td{
+	padding: 15px 0;
+}
+section#availability-detail table tr td:last-child{
+	text-align: right;
+}
+section#availability-detail .row > div{	
+	padding: 8vw;
+	max-height: 850px;
+}
+section#availability-detail .mat-button{
+	letter-spacing: initial;
+	margin-bottom: 30px;
+	padding: 1em 3em;
+	min-width: 50%;
+}
+#availability-apply{
+	border: 1px solid #fff;
+}
+#availability-download{
+	background: #1b1f99;
+}
+section#availability-detail .close
